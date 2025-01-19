@@ -16,19 +16,9 @@
         height: 100%;
         margin: 0;
     }
-    .container-fluid{
-        position: relative;
-        height: 35px;
-    }
-    .navbar-collapse{
-        position: absolute;
-        right: 0;
-        height: 100%;
-        z-index: 2;
-    }
     .foot{
       width: 100%;
-      position: fixed;
+      position:fixed;
       bottom: 0;
       z-index: 1;
     }
@@ -52,12 +42,12 @@
         margin-top: auto;
         margin-bottom: auto;
     }
-    .navbar{
-        background-color: transparent;
-        position: fixed;
+    nav{
+        background-color: #1054CB;
+        position: absolute;
+        left: 0;
         top: 0;
         width: 100%;
-        overflow: hidden;
         z-index: 1;
     }
     .textjudul{
@@ -77,10 +67,9 @@
     }
     .isi{
         margin: auto;
-        margin-top: 50px;
         padding-top: 100px;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 10%;
+        padding-right: 10%;
         width: 100%;
     }
     .isi li{
@@ -101,12 +90,11 @@
     .ourgamessite{
       display: none;
       margin: auto;
-      margin-top: 50px;
       padding-top: 100px;
       width: 100%;
     }
     .ourgamessite h1{
-      margin-left: 200px;
+      margin-left: 10%;
     }
     .home{
       font-weight: bold;
@@ -154,39 +142,88 @@
       background-color: transparent;
       border: none;
     }
+    .identitas{
+      margin-left: 50px; 
+      margin-top: 30px;
+    }
+    nav div ul{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      margin: auto;
+      width: 40%;
+    }
+    nav div ul li{
+      margin: auto;
+      text-decoration: none;
+    }
+    nav{
+      position: fixed;
+      top: 0;
+    }
+    nav div{
+      width: 100%;
+      background-color: #1054CB;
+    }
+    @media (max-width: 991.98px) {
+      .textjudul{
+        font-size: 44px;
+      }
+      .subjudul{
+        font-size: 28px;
+      }
+      .identitas{
+        margin: 0;
+        margin-top: 20px;
+      }
+      .footer{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer div{
+        align-items: center;
+        margin: auto;
+      }
+      .navbar-nav{
+        width: 100%;
+        align-items: center;
+      }
+      nav div ul{
+        width: 98%;
+      }
+      .bahasa{
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+      }
+    }
   </style>
 </head>
 <body class="en">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link home" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link faq" href="#">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link about" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link support" href="#">Support Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link games" href="#">Our Games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index-id.html"><button class="bahasa">🇮🇩</button></a>
-          </li>
-        </ul>
-      </div>
+  <nav>
+    <div>
+      <ul>
+        <li class="nav-item">
+          <a class="home text-light" href="#" style="text-decoration: none;">Home</a>
+        </li>
+        <li class="item-nav">
+          <a class="faq text-light" href="#" style="text-decoration: none;">FAQ</a>
+        </li>
+        <li class="item-nav">
+          <a class="about text-light" href="#" style="text-decoration: none;">About Us</a>
+        </li>
+        <li class="item-nav">
+          <a class="support text-light" href="#" style="text-decoration: none;">Support Us</a>
+        </li>
+        <li class="item-nav">
+          <a class="games text-light" href="#" style="text-decoration: none;">Our Games</a>
+        </li>
+        <li class="item-nav">
+          <a href="index.html"><button class="bahasa">🇬🇧</button></a>
+        </li>
+      </ul>
     </div>
-  </nav>  
+</nav>  
   <div class="homesite isi">
     <h1 class="textjudul" style="color: RGB(107, 134, 255);">Grooth Studio.</h1><br><br>
     <p><b>Grooth Studio</b> is an indie game development group that was founded on April 19, 2024. We focus on developing engaging and creative 2D games, aiming to provide unique and enjoyable experiences for gamers. Our team consists of talented and dedicated members, each bringing specific skills to create high-quality games.</p>
@@ -351,16 +388,22 @@
       $(".nav-link").css("font-weight", "400");
       $(".nav-link").css("color", "#000000cc");
       $(".home").css("font-weight", "bold");
+      $(".about").css("font-weight", "400");
+      $(".support").css("font-weight", "400");
+      $(".faq").css("font-weight", "400");
+      $(".games").css("font-weight", "400");
       $(".isi").hide();
       $(".homesite").show();
     });
     $(".faq").click(function (e) { 
       e.preventDefault();
-      $(".nav-link").css("font-weight", "400");
       $(".nav-link").css("color", "#000000cc");
       $(".faq").css("font-weight", "bold");
       $(".faq").css("color", "black");
       $(".home").css("font-weight", "400");
+      $(".about").css("font-weight", "400");
+      $(".support").css("font-weight", "400");
+      $(".games").css("font-weight", "400");
       $(".isi").hide();
       $(".faqsite").show();
     });
@@ -371,6 +414,9 @@
       $(".about").css("font-weight", "bold");
       $(".about").css("color", "black");
       $(".home").css("font-weight", "400");
+      $(".faq").css("font-weight", "400");
+      $(".support").css("font-weight", "400");
+      $(".games").css("font-weight", "400");
       $(".isi").hide();
       $(".aboutussite").show();
     });
@@ -382,6 +428,9 @@
       $(".support").css("font-weight", "bold");
       $(".support").css("color", "black");
       $(".home").css("font-weight", "400");
+      $(".about").css("font-weight", "400");
+      $(".faq").css("font-weight", "400");
+      $(".games").css("font-weight", "400");
       $(".isi").hide();
       $(".supportussite").show();
     });
@@ -393,6 +442,9 @@
       $(".games").css("font-weight", "bold");
       $(".games").css("color", "black");
       $(".home").css("font-weight", "400");
+      $(".about").css("font-weight", "400");
+      $(".support").css("font-weight", "400");
+      $(".faq").css("font-weight", "400");
       $(".isi").hide();
       $(".ourgamessite").show();
     });
