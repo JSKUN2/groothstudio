@@ -413,7 +413,9 @@
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
       $(".homesite").css("display", "block");
-    });
+      $('#menu-toggle').prop('checked', false);
+      window.scrollTo(0, 0);  
+});
     $(".faq").click(function (e) { 
       e.preventDefault();
       $(".nav-link").css("color", "#000000cc");
@@ -424,7 +426,9 @@
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
       $(".faqsite").css("display", "block");
-    });
+      $('#menu-toggle').prop('checked', false);
+      window.scrollTo(0, 0);
+});
     $(".about").click(function (e) { 
       e.preventDefault();
       $(".nav-link").css("font-weight", "400");
@@ -436,6 +440,8 @@
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
       $(".aboutussite").css("display", "block");
+      $('#menu-toggle').prop('checked', false);
+      window.scrollTo(0, 0);
     });
     $(".support").click(function (e) { 
       e.preventDefault();
@@ -448,6 +454,8 @@
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
       $(".supportussite").css("display", "block");
+      $('#menu-toggle').prop('checked', false);
+      window.scrollTo(0, 0);
     });
     $(".games").click(function (e) { 
       e.preventDefault();
@@ -460,6 +468,8 @@
       $(".faq").css("font-weight", "400");
       $(".isi").css("display", "none");
       $(".ourgamessite").css("display", "block");
+      $('#menu-toggle').prop('checked', false);
+      window.scrollTo(0, 0);
     });
     $(".carousel-item").hover(function () {
         $(".kontrol").show();
