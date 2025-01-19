@@ -200,6 +200,24 @@
         height: 30px;
         font-size: 25px;
       }
+      .homesite{
+        display: block;
+      }
+      .faqsite{
+        display: none;
+      }
+      .aboutussite{
+        display: none;
+      }
+      .supportussite{
+        display: none;
+      }
+      .ourgamessite{
+        display: none;
+        margin: auto;
+        padding-top: 100px;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -399,8 +417,8 @@
       $(".support").css("font-weight", "400");
       $(".faq").css("font-weight", "400");
       $(".games").css("font-weight", "400");
-      $(".isi").hide();
-      $(".homesite").show();
+      $(".isi").css("display", "none");
+      $(".homesite").css("display", "block");
     });
     $(".faq").click(function (e) { 
       e.preventDefault();
@@ -411,8 +429,8 @@
       $(".about").css("font-weight", "400");
       $(".support").css("font-weight", "400");
       $(".games").css("font-weight", "400");
-      $(".isi").hide();
-      $(".faqsite").show();
+      $(".isi").css("display", "none");
+      $(".faqsite").css("display", "block");
     });
     $(".about").click(function (e) { 
       e.preventDefault();
@@ -424,8 +442,8 @@
       $(".faq").css("font-weight", "400");
       $(".support").css("font-weight", "400");
       $(".games").css("font-weight", "400");
-      $(".isi").hide();
-      $(".aboutussite").show();
+      $(".isi").css("display", "none");
+      $(".aboutussite").css("display", "block");
     });
     $(".support").click(function (e) { 
       e.preventDefault();
@@ -438,8 +456,8 @@
       $(".about").css("font-weight", "400");
       $(".faq").css("font-weight", "400");
       $(".games").css("font-weight", "400");
-      $(".isi").hide();
-      $(".supportussite").show();
+      $(".isi").css("display", "none");
+      $(".supportussite").css("display", "block");
     });
     $(".games").click(function (e) { 
       e.preventDefault();
@@ -452,8 +470,8 @@
       $(".about").css("font-weight", "400");
       $(".support").css("font-weight", "400");
       $(".faq").css("font-weight", "400");
-      $(".isi").hide();
-      $(".ourgamessite").show();
+      $(".isi").css("display", "none");
+      $(".ourgamessite").css("display", "block");
     });
     $(".carousel-item").hover(function () {
         $(".kontrol").show();
