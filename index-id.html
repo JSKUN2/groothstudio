@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooth Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/logo" type="image/x-icon">
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    .container-fluid{
+        position: relative;
+        height: 35px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        right: 0;
+        height: 100%;
+        z-index: 2;
+    }
+    .foot{
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+    }
+    .footer{
+        background-color: #1054CB;
+        color: white;
+        font-family:"Montserrat", "Arial";
+        width: 100vw;
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer h6{
+        margin-left: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .footer div{
+        margin-right: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .navbar{
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .textjudul{
+        font-weight: 800;
+        font-size: 64px;
+        font-family: "Montserrat";
+    }
+    .subjudul{
+        font-weight: 700;
+        font-size: 32px;
+        font-family: "Montserrat";
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "Montserrat";
+    }
+    .isi{
+        margin: auto;
+        margin-top: 50px;
+        padding-top: 100px;
+        padding-left: 200px;
+        padding-right: 200px;
+        width: 100%;
+    }
+    .isi li{
+      list-style: square;
+    }
+    .homesite{
+      display: block;
+    }
+    .faqsite{
+      display: none;
+    }
+    .aboutussite{
+      display: none;
+    }
+    .supportussite{
+      display: none;
+    }
+    .ourgamessite{
+      display: none;
+      margin: auto;
+      margin-top: 50px;
+      padding-top: 100px;
+      width: 100%;
+    }
+    .ourgamessite h1{
+      margin-left: 200px;
+    }
+    .home{
+      font-weight: bold;
+      color: black;
+    }
+    hr{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card{
+      margin: auto;
+      width: 80%;
+      color: white;
+      border: none;
+      z-index: 0;
+    }
+    .materi{
+      width: 100vw;
+      z-index: 0;
+    }
+    .materi:nth-child(odd){
+      background-color: #1054CB;
+    }
+    .materi:nth-child(odd) .card{
+      background-color: #1054CB;
+    }
+    .materi:nth-child(even) .card{
+      background-color: white;
+      color: black;
+    }
+    .materi:nth-child(even) .card{
+      background-color: white;
+      color: black;
+    }
+    .nav-item{
+      margin: auto;
+      margin-right: 10px;
+      font-family: "Montserrat";
+    }
+    .bahasa{
+      width: 40px;
+      height: 40px;
+      font-size: 35px;
+      background-color: transparent;
+      border: none;
+    }
+  </style>
+</head>
+<body class="en">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link home" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link faq" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about" href="#">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link support" href="#">Dukung Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link games" href="#">Games Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><button class="bahasa">🇬🇧</button></a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <div class="homesite isi">
+    <h1 class="textjudul" style="color: RGB(107, 134, 255);">Grooth Studio.</h1><br><br>
+    <p><b>Grooth Studio</b> adalah grup pengembang game indie yang didirikan pada 19 April 2024. Kami berfokus pada pengembangan game 2D yang menarik dan kreatif, yang bertujuan untuk memberikan pengalaman yang unik dan menyenangkan bagi para gamer. Tim kami terdiri dari anggota yang berbakat dan berdedikasi, masing-masing memiliki keterampilan khusus untuk menciptakan game berkualitas tinggi.</p>
+  </div>
+  <div class="faqsite isi">
+    <h1 class="textjudul" style="color: RGB(107, 134, 255);">FAQ.</h1><br><br>
+    <p><b>Ada pertanyaan?</b> di sini Anda akan menemukan jawaban atas pertanyaan paling umum dari komunitas kami, beserta akses ke petunjuk dan dukungan langkah demi langkah.
+    </p>
+  </div>
+  <div class="aboutussite isi">
+    <h1 class="textjudul" style="color: RGB(107, 134, 255);">Tentang Kami.</h1><br><br>
+    <p><b>Grooth Studio</b> adalah grup pengembang game indie yang didirikan pada 19 April 2024. Kami berfokus pada pengembangan game 2D yang menarik dan kreatif, yang bertujuan untuk memberikan pengalaman yang unik dan menyenangkan bagi para gamer. Tim kami terdiri dari anggota yang berbakat dan berdedikasi, masing-masing memiliki keterampilan khusus untuk menciptakan game berkualitas tinggi.</p> <br>
+    <p><b>Anggota Team:</b> </p> <br>
+    <p>
+      <ul>
+        <li><b>Boltbert and Elemastonic (Programmers):</b> sebagai programmer, Boltbert dan Elemastonic bertanggung jawab untuk mengembangkan kode dan mekanisme permainan. Mereka bekerja sama untuk menciptakan sistem yang stabil dan fungsional, memastikan bahwa setiap elemen permainan berjalan lancar. Keahlian mereka dalam pemrograman memungkinkan kami untuk memperkenalkan inovasi dan permainan yang memikat.</li>
+        <li><b>Grizz (Designer):</b> Grizz adalah desainer kami, yang bertanggung jawab untuk menciptakan visual dan estetika permainan. Dengan kreativitas dan perhatian yang tajam terhadap detail, Grizz mendesain karakter, lingkungan, dan antarmuka pengguna yang menarik secara visual. Desain yang kuat sangat penting untuk memberikan pengalaman yang mendalam dan menghubungkan pemain dengan dunia yang kami ciptakan.</li>
+        <li><b>Yon (Sound dan BGM Effects):</b> Yon adalah dalang di balik suara dan musik dalam game kami. Dengan keahlian dalam menciptakan efek suara dan musik latar yang memukau, Yon membantu menciptakan suasana yang tepat untuk setiap game. Musik dan efek suara yang tepat dapat meningkatkan pengalaman bermain game dan membuatnya lebih mendalam.</li>
+      </ul>
+    </p> <br>
+    <p>Di <b>Grooth Studio</b>, kami berkomitmen untuk menciptakan permainan yang tidak hanya menghibur tetapi juga meninggalkan kesan abadi. Setiap anggota tim berkontribusi dengan penuh semangat dan kreativitas, dan kami bersemangat untuk memajukan proyek kami. Kami percaya bahwa melalui kerja keras dan kolaborasi, kami dapat menghasilkan kreasi yang dapat dinikmati oleh banyak orang.</p><br><br><br><br><br><br>
+  </div>
+  <div class="supportussite isi">
+    <h1 class="textjudul" style="color: RGB(107, 134, 255);">Dukung Kami.</h1><br><br>
+    <p>Di <b>Grooth Studio</b>, dukungan Anda sangat berarti bagi kami dan membantu kami untuk terus berkarya. Berikut ini beberapa cara Anda dapat mendukung kami:</p> <br>
+    <h1 class="subjudul isi" style="color: RGB(107, 134, 255); margin: 0; padding: 0;"><b>1. Ikuti sosial media kami</b> </h1> <br>
+    <p><b>Jadilah bagian dari perjalanan kami dengan mengikuti akun media sosial kami.</b> Kami sering berbagi informasi terbaru, cuplikan, dan berita terkini tentang proyek kami. Setiap like dan share Anda membantu kami menjangkau lebih banyak orang!</p>    <p>
+      <ul>
+        <li><b>Instagram :</b> grooth_studio</li>
+        <li><b>YouTube :</b> @GroothStudio</li>
+        <li><b>X :</b> Grooth_Studio</li>
+      </ul>
+    </p> <br>
+    <h1 class="subjudul isi" style="color: RGB(107, 134, 255); margin: 0; padding: 0;"><b>2. Berikan Masukan</b> </h1> <br>
+    <p><b>Kami sangat menghargai masukan dari komunitas.</b> Jika Anda memiliki ide atau masukan tentang permainan kami, jangan ragu untuk menghubungi kami. Setiap pendapat yang Anda miliki sangat berharga dan dapat membantu kami untuk meningkatkan permainan.</p><br>    <h1 class="subjudul isi" style="color: RGB(107, 134, 255); margin: 0; padding: 0;"><b>3. Donate</b> </h1> <br>
+    <p><b>Jika Anda ingin mendukung kami secara langsung, Anda dapat memberikan donasi di sini.</b> Setiap kontribusi akan membantu kami mengembangkan proyek kami dan terus menciptakan permainan yang menarik.</p><br>
+    <img src="img/qr.jpg" alt="" style="width: 270px; height: auto;"><br>
+    <p>Kami ingin <b>mengucapkan terima kasih kepada para donatur</b> yang telah memberikan kontribusinya</p>
+    <b>
+      <p><b>Donatur Kami:</b></p>
+      <p>
+        <ul>
+          <li>[Alvin Lim]</li>
+          <li>[Grookey]</li>
+          <li>[Jimmy]</li>
+        </ul>
+      </p><br>
+      <p>Terima kasih telah mempertimbangkan untuk mendukung Grooth Studio.</b> Kami sangat menghargai dukungan Anda dan tidak sabar untuk berbagi karya kami dengan Anda!</p><br><br><br><br><br><br>  </div>
+  <div class="foot">
+    <hr>
+    <div class="footer">
+      <h6>
+          <b>
+            Copyright GroothStudio2024<br><br>Contact Us : <a href="mailto:studiogrooth@gmail.com" style="color: white;">studiogrooth@gmail.com</a>
+        </b>
+      </h6>
+      <div>
+          <a href="https://www.youtube.com/@groothstudio">
+              <img src="img/Youtube_logo.png" alt="" style="clip-path: circle(); width: 35px; height: 35px;">
+          </a>
+          <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Fgrooth_studio%2F&sa=D&sntz=1&usg=AOvVaw1mocSjjUT3tnYnXdmsrmTn">
+            <img src="img/Instagram.png" alt="" style="clip-path: circle(); width: 40px; height: 35px;">
+          </a>
+          <a href="https://www.google.com/url?q=https%3A%2F%2Fx.com%2FGrooth_Studio&sa=D&sntz=1&usg=AOvVaw020-fgkJSyCc1x1pTDS0ky">
+            <img src="img/X.png" alt="" style="clip-path: circle(); width: 35px; height: 35px;">
+          </a>
+          <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2FGroothStudio%3Ftab%3Drepositories&sa=D&sntz=1&usg=AOvVaw17SUxRwFkCtsQce7HwISPs">
+            <img src="img/Github.png" alt="" style="clip-path: circle(); width: 35px; height: 35px;">
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="ourgamessite">
+    <h1 class="textjudul" style="color: RGB(107, 134, 255);">Games dari Grooth Studio.</h1><br>
+    <div class="materi 1">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <h1 class="subjudul" style="margin-left: 50px; margin-top: 30px;">Game terbaru kami.</h1><br>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="img/game1.1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/game1.2.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title subjudul" style="margin-top: 10px;">Square Match</h5><br>
+              <p class="card-text" style="font-size: 14px;">Game yang terinspirasi dari game Google Dino. Jika Anda merasa bosan, Anda dapat memainkan game ini. Inti dari game ini adalah meraih skor sebanyak mungkin tanpa jatuh dari platform. <br> Ada 3 tingkat kesulitan: <br>                <ul style="font-size: 14px;">
+                  <li>
+                    Easy
+                  </li>
+                  <li>
+                    Medium
+                  </li>
+                  <li>
+                    Hard
+                  </li>
+                </ul><br>
+                </p>
+                <p class="card-text"  style="font-size: 14px;">
+                    Hubungi Kami: jangan ragu untuk menghubungi kami dan melaporkan masalah Anda untuk membantu meningkatkan permainan kami dengan menghubungi studiogrooth@gmail.com
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="materi 2">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <h1 class="subjudul" style="margin-left: 50px; margin-top: 30px;">Projek Kami.</h1><br>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="img/game2.1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="img/game2.2" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title subjudul" style="margin-top: 10px;">Akan Datang !</h5><br>
+              <p class="card-text" style="font-size: 14px;">Tidak ada deskripsi yang tersedia <br><br><br>Hubungi Kami: jangan ragu untuk menghubungi kami dan melaporkan masalah Anda untuk membantu meningkatkan permainan kami dengan menghubungi studiogrooth@gmail.com</p>            </div>
+          </div>
+        </div>
+      </div>
+    </div><br><br><br><br><br><br>
+  </div>
+  <script>
+    $(".home").click(function (e) { 
+      e.preventDefault();
+      $(".nav-link").css("font-weight", "400");
+      $(".nav-link").css("color", "#000000cc");
+      $(".home").css("font-weight", "bold");
+      $(".isi").hide();
+      $(".homesite").show();
+    });
+    $(".faq").click(function (e) { 
+      e.preventDefault();
+      $(".nav-link").css("font-weight", "400");
+      $(".nav-link").css("color", "#000000cc");
+      $(".faq").css("font-weight", "bold");
+      $(".faq").css("color", "black");
+      $(".home").css("font-weight", "400");
+      $(".isi").hide();
+      $(".faqsite").show();
+    });
+    $(".about").click(function (e) { 
+      e.preventDefault();
+      $(".nav-link").css("font-weight", "400");
+      $(".nav-link").css("color", "#000000cc");
+      $(".about").css("font-weight", "bold");
+      $(".about").css("color", "black");
+      $(".home").css("font-weight", "400");
+      $(".isi").hide();
+      $(".aboutussite").show();
+    });
+    $(".support").click(function (e) { 
+      e.preventDefault();
+      $(".nav-link").css("font-weight", "400");
+      $(".nav-link").css("color", "#000000cc");
+      $(".home").css("color", "#000000cc");
+      $(".support").css("font-weight", "bold");
+      $(".support").css("color", "black");
+      $(".home").css("font-weight", "400");
+      $(".isi").hide();
+      $(".supportussite").show();
+    });
+    $(".games").click(function (e) { 
+      e.preventDefault();
+      $(".nav-link").css("font-weight", "400");
+      $(".nav-link").css("color", "#000000cc");
+      $(".home").css("color", "#000000cc");
+      $(".games").css("font-weight", "bold");
+      $(".games").css("color", "black");
+      $(".home").css("font-weight", "400");
+      $(".isi").hide();
+      $(".ourgamessite").show();
+    });
+    $(".carousel-item").hover(function () {
+        $(".kontrol").show();
+      }, function () {
+        $(".kontrol").hide();
+      }
+    );
+  </script>
+</body>
+</html>
