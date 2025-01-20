@@ -403,7 +403,8 @@
     </div><br><br><br><br><br><br>
   </div>
   <script>
-     $(".home").click(function (e) { 
+     $(document).ready($('#menu-toggle').prop('checked', false);)
+      $(".home").click(function (e) { 
       e.preventDefault();
       $(".nav-link").css("font-weight", "400");
       $(".home").css("font-weight", "bold");
