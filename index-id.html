@@ -173,6 +173,9 @@
     .top-nav{
       z-index:6;
     }
+    .menu li{
+      cursor: pointer;
+    }
     @media (max-width: 991.98px) {
       .textjudul{
         font-size: 38px;
@@ -236,10 +239,10 @@
     <div class='menu-button'></div>
   </label>
     <ul class="menu">
-      <li class="home">Home</li>
-      <li class="faq">Faq</li>
-      <li class="about">About Us</li>
-      <li class="support">Support Us</li>
+      <li class="home">Beranda</li>
+      <li class="faq">FAQ</li>
+      <li class="about">Tentang Kami</li>
+      <li class="support">Dukung Kami</li>
       <li class="games">Games</li>
       <li><a href="index.html" style="text-decoration: none; font-size: 20px;">🇬🇧</a></li>
     </ul>
@@ -409,6 +412,7 @@
       $(".faq").css("font-weight", "400");
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
+      $(".games").css("display", "none");
       $(".homesite").css("display", "block");
       $('#menu-toggle').prop('checked', false);
       window.scrollTo(0, 0);  
@@ -421,6 +425,7 @@
       $(".about").css("font-weight", "400");
       $(".support").css("font-weight", "400");
       $(".games").css("font-weight", "400");
+      $(".games").css("display", "none");
       $(".isi").css("display", "none");
       $(".faqsite").css("display", "block");
       $('#menu-toggle').prop('checked', false);
@@ -436,6 +441,7 @@
       $(".support").css("font-weight", "400");
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
+      $(".games").css("display", "none");
       $(".aboutussite").css("display", "block");
       $('#menu-toggle').prop('checked', false);
       window.scrollTo(0, 0);
@@ -450,6 +456,7 @@
       $(".faq").css("font-weight", "400");
       $(".games").css("font-weight", "400");
       $(".isi").css("display", "none");
+      $(".games").css("display", "none");
       $(".supportussite").css("display", "block");
       $('#menu-toggle').prop('checked', false);
       window.scrollTo(0, 0);
