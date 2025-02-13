@@ -82,8 +82,7 @@
         color: #003567;
         font-weight: 600;
     }
-    .kanan .english{
-        text-decoration: none;
+    .kanan .indonesia{
         color: #4F7FBF;
     }
     a{
@@ -101,12 +100,12 @@
             <div class='menu-button'></div>
           </label>
             <ul class="menu">
-              <li class="home active" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); home()">Home</li>
-              <li class="news" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()">News</li>
+              <li class="home active" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); home()">Beranda</li>
+              <li class="news" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()">Berita</li>
               <li class="faq" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()">FAQ</li>
-              <li class="about" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); about()">About Us</li>
-              <li class="support" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); support()">Support Us</li>
-              <li class="games" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); games()">Games</li>
+              <li class="about" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); about()">Tentang Kami</li>
+              <li class="support" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); support()">Dukung Kami</li>
+              <li class="games" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); games()">Permainan</li>
             </ul>
           </section>
     </div>
@@ -129,7 +128,7 @@
                     <h1 class="judulisi">
                         Grooth Studio.
                     </h1>
-                    <p class="isinyaisi">Grooth Studio is an indie game development group founded on April 19, 2024. We focus on creating and developing fun and innovative 2D games, aiming to offer players a unique and enjoyable experience. Our team consists of talented and dedicated members, each with specific skills, ensuring high quality game production.</p>
+                    <p class="isinyaisi">Grooth Studio adalah grup pengembangan game indie yang didirikan pada 19 April 2024. Kami fokus pada pembuatan dan pengembangan game 2D yang menyenangkan dan inovatif, yang bertujuan untuk menawarkan pengalaman unik dan menyenangkan kepada para pemain. Tim kami terdiri dari anggota yang berbakat dan berdedikasi, masing-masing dengan keterampilan khusus, memastikan produksi game berkualitas tinggi.</p>
                 <div class="bahasa">
                     <div class="kiri">Change Language ?</div>
                     <div class="kanan"><a href="desktop-ID.html"><h4 class="indonesia">Indonesia</h4></a><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,83 +141,83 @@
         </div>
     </div>
     <script>
-        $(".indonesia").hover(function () {
-                $(".english").css("color", "#003567");
-                $(".indonesia").css("color", "#4F7FBF");
+        $(".english").hover(function () {
+                $(".indonesia").css("color", "#003567");
+                $(".english").css("color", "#4F7FBF");
                 
             }, function () {
-                $(".english").css("color", "#4F7FBF");
-                $(".indonesia").css("color", "#003567");
+                $(".indonesia").css("color", "#4F7FBF");
+                $(".english").css("color", "#003567");
             }
         );
-        $(".News").click(function (e) { 
+        $(".news").click(function (e) { 
             e.preventDefault();
-            $(".judulisi").html("News.");
-            $(".isinyaisi").html("<b>Grooth Studio Team :</b><br><br>Currently, Grooth Studio is focusing on developing our newest game. Our team is working hard to create a unique and engaging gaming experience for gamers. We are designing new features and gameplay mechanics that will bring more challenges and excitement to players.<br>Although there is no new News that we can share at this time, we would like to thank you for your support. We will provide further updates as soon as this game is ready to be introduced to the public.<br><br>Thank you for being part of our journey!");
-        });
+            $(".judulisi").html("Berita.");
+            $(".isinyaisi").html("<b>Tim Grooth Studio :</b><br><br>Saat ini, Grooth Studio sedang fokus mengembangkan game terbaru kami. Tim kami bekerja keras untuk menciptakan pengalaman bermain game yang unik dan menarik bagi para gamer. Kami sedang merancang fitur dan mekanisme gameplay baru yang akan menghadirkan lebih banyak tantangan dan kegembiraan bagi para pemain.<br>Meskipun belum ada berita baru yang dapat kami bagikan saat ini, kami ingin mengucapkan terima kasih atas dukungan Anda. Kami akan memberikan pembaruan lebih lanjut segera setelah game ini siap diperkenalkan kepada publik.<br><br>Terima kasih telah menjadi bagian dari perjalanan kami!");        });
         $(".home").click(function (e) { 
             e.preventDefault();
             $(".judulisi").html("Grooth Studio.");
-            $(".isinyaisi").html("Grooth Studio is an indie game development group founded on April 19, 2024. We focus on creating and developing fun and innovative 2D games, aiming to offer players a unique and enjoyable experience. Our team consists of talented and dedicated members, each with specific skills, ensuring high quality game production.")
-        });
+            $(".isinyaisi").html("Grooth Studio adalah grup pengembangan game indie yang didirikan pada 19 April 2024. Kami fokus pada pembuatan dan pengembangan game 2D yang menyenangkan dan inovatif, yang bertujuan untuk menawarkan pengalaman unik dan menyenangkan kepada para pemain. Tim kami terdiri dari anggota yang berbakat dan berdedikasi, masing-masing dengan keterampilan khusus, memastikan produksi game berkualitas tinggi.")});
         $(".faq").click(function (e) { 
             e.preventDefault();
             $(".judulisi").html("FAQ.");
-            $(".isinyaisi").html("<b>Have questions?</b> Here you'll find answers to the most common inquiries from our community, along with access to step-by-step instructions and support.")
-        });
+            $(".isinyaisi").html("<b>Ada pertanyaan?</b> Di sini Anda akan menemukan jawaban atas pertanyaan paling umum dari komunitas kami, bersama dengan akses ke petunjuk dan dukungan langkah demi langkah.")        });
         $(".about").click(function (e) { 
             e.preventDefault();
-            $(".judulisi").html("About Us.");
+            $(".judulisi").html("Tentang Kami.");
             $('.isinyaisi').html(`
-                <h2 class="subjudul"><b>Team Members:</b></h2>
+                <p><b>Grooth Studio</b> adalah grup pengembang game indie yang didirikan pada 19 April 2024. Kami berfokus pada pengembangan game 2D yang menarik dan kreatif, yang bertujuan untuk memberikan pengalaman yang unik dan menyenangkan bagi para gamer. Tim kami terdiri dari anggota yang berbakat dan berdedikasi, masing-masing memiliki keterampilan khusus untuk menciptakan game berkualitas tinggi.</p> <br>
+                <h2 class="subjudul"><b>Anggota Team:</b> </h2> <br>
+                <p>
                 <ul>
-                    <li><b>Boltbert and Elemastonic (Programmers):</b> As programmers, Boltbert and Elemastonic are responsible for developing the code and game mechanics. They work together to create a stable and functional system, ensuring that every element of the game runs smoothly. Their expertise in programming allows us to introduce innovations and captivating gameplay.</li><br>
-                    <li><b>Grizz (Designer):</b> Grizz is our designer, responsible for crafting the visuals and aesthetics of the game. With creativity and a keen eye for detail, Grizz designs characters, environments, and user interfaces that are visually appealing. Strong design is crucial for providing an immersive experience and connecting players to the worlds we create.</li><br>
-                    <li><b>Yon (Sound and BGM Effects):</b> Yon is the mastermind behind the sound and music in our games. With expertise in creating atmospheric sound effects and background music, Yon helps set the right mood for each game. The right music and sound effects can enhance the gameplay experience and make it more immersive.</li><br>
-                    <li><b>Joseph (Web Developer and Lore Writer):</b> Joseph is the mastermind behind this website. He designed the platform that serves as a bridge between the development team and the players, ensuring seamless communication. Additionally, he writes the lore that immerses players deeply into the world he has created, weaving stories that enhance their experience and connection to the game.</li><br>
-                    <li><b>Gabriel (Sound and BGM Effects):</b> Gabriel adores playing musical instruments and creating music. Due to his love for the wonderful world of music, he has been able to gain various skills directly related to this field. He has been involved in fusion-jazz and RnB for 5 years now. Moreover, he has been playing the electric guitar for 2 years, adding more depth to his musicality. Additionally, Gabriel has spent 3 years learning Ableton and FL Studio, allowing him to create and produce music more professionally.</li><br>
+                    <li><b>Boltbert and Elemastonic (Programmers):</b> sebagai programmer, Boltbert dan Elemastonic bertanggung jawab untuk mengembangkan kode dan mekanisme permainan. Mereka bekerja sama untuk menciptakan sistem yang stabil dan fungsional, memastikan bahwa setiap elemen permainan berjalan lancar. Keahlian mereka dalam pemrograman memungkinkan kami untuk memperkenalkan inovasi dan permainan yang memikat.</li>
+                    <li><b>Grizz (Designer):</b> Grizz adalah desainer kami, yang bertanggung jawab untuk menciptakan visual dan estetika permainan. Dengan kreativitas dan perhatian yang tajam terhadap detail, Grizz mendesain karakter, lingkungan, dan antarmuka pengguna yang menarik secara visual. Desain yang kuat sangat penting untuk memberikan pengalaman yang mendalam dan menghubungkan pemain dengan dunia yang kami ciptakan.</li>
+                    <li><b>Yon (Sound dan BGM Effects):</b> Yon adalah dalang di balik suara dan musik dalam game kami. Dengan keahlian dalam menciptakan efek suara dan musik latar yang memukau, Yon membantu menciptakan suasana yang tepat untuk setiap game. Musik dan efek suara yang tepat dapat meningkatkan pengalaman bermain game dan membuatnya lebih mendalam.</li>
+                    <li><b>Joseph (Web Developer dan Lore Writer):</b> Joseph adalah seorang master kultivasi yang juga ahli dalam Web Development. Dengan keahliannya, ia menciptakan platform yang menghubungkan tim pengembang dan pemain. Pencerahan yang diperoleh selama kultivasi memberinya wawasan mendalam, sehingga ia mampu menulis cerita yang memikat dan membawa pemain lebih dalam ke dalam dunia yang ia ciptakan.</li>
+                    <li><b>Gabriel (Sound dan BGM Effects):</b>Gabriel sangat menyukai bermain alat musik dan menciptakan musik. Karena kecintaannya pada dunia musik yang indah, dia telah mampu mendapatkan berbagai keterampilan yang berhubungan langsung dengan bidang ini. Dia telah terlibat dalam fusion-jazz dan RnB selama 5 tahun. Selain itu, dia telah memainkan gitar elektrik selama 2 tahun, menambah kedalaman musikalitasnya. Selain itu, Gabriel telah menghabiskan waktu 3 tahun untuk mempelajari Ableton dan FL Studio, yang memungkinkannya untuk menciptakan dan memproduksi musik secara lebih profesional.</li>
                 </ul>
-                <p>At <b>Grooth Studio</b>, we are committed to creating games that are not only entertaining but also leave a lasting impression. Each team member contributes with passion and creativity, and we are excited to move our projects forward. We believe that through hard work and collaboration, we can deliver creations that can be enjoyed by many.</p>
+                </p> <br>
+                <p>Di <b>Grooth Studio</b>, kami berkomitmen untuk menciptakan permainan yang tidak hanya menghibur tetapi juga meninggalkan kesan abadi. Setiap anggota tim berkontribusi dengan penuh semangat dan kreativitas, dan kami bersemangat untuk memajukan proyek kami. Kami percaya bahwa melalui kerja keras dan kolaborasi, kami dapat menghasilkan kreasi yang dapat dinikmati oleh banyak orang.</p><br><br><br><br><br><br>
             `);
         });
         $(".support").click(function (e) { 
             e.preventDefault();
-            $(".judulisi").html("Support Us.");
+            $(".judulisi").html("Dukung Kami.");
             $('.isinyaisi').html(`
-                            <p>At <b>Grooth Studio</b>, your support means a lot to us and helps us to continue creating. Here are some ways you can support us:</p> <br>
-                            <h2 class="subjudul"><b>1. Follow Us on Social Media</b> </h2> <br>
-                            <p><b>Be a part of our journey by following our social media accounts.</b> We frequently share updates, sneak peeks, and the latest news about our projects. Your every like and share helps us reach more people!</p>
-                            <p>
-                            <ul>
-                                <li><b>Instagram :</b> grooth_studio</li>
-                                <li><b>YouTube :</b> @GroothStudio</li>
-                                <li><b>X :</b> Grooth_Studio</li>
-                            </ul>
-                            </p> <br>
-                            <h2 class="subjudul"><b>2. Give Feedback</b> </h2> <br>
-                            <p><b>We really appreciate input from the community.</b> If you have any ideas or feedback about our game, feel free to contact us. Every opinion you have is valuable and can help us improve.</p><br>
-                            <h2 class="subjudul"><b>3. Donate</b> </h2> <br>
-                            <p><b>If you would like to support us directly, you can make a donation here.</b> Every contribution will help us to develop our projects and continue creating interesting games.</p><br>
-                            <img src="img/qr.jpg" alt="" style="width: 270px; height: auto;"><br>
-                            <p>We would like to <b>thank our donators</b> who have contributed</p>
-                            <b>
-                            <p><b>Our Donators:</b></p>
-                            <p>
-                                <ul>
-                                <li>[Alvin Lim]</li>
-                                <li>[Grookey]</li>
-                                <li>[Jimmy]</li>
-                                </ul>
-                            </p><br>
-                            <p>Thank you for considering supporting Grooth Studio.</b> We really appreciate your support and can't wait to share our work with you!</p>
-                        `);
+                   <p>Di <b>Grooth Studio</b>, dukungan Anda sangat berarti bagi kami dan membantu kami untuk terus berkarya. Berikut ini beberapa cara Anda dapat mendukung kami:</p>
+                    <h2 class="subjudul"><b>1. Ikuti sosial media kami</b> </h2>
+                    <p><b>Jadilah bagian dari perjalanan kami dengan mengikuti akun media sosial kami.</b> Kami sering berbagi informasi terbaru, cuplikan, dan berita terkini tentang proyek kami. Setiap like dan share Anda membantu kami menjangkau lebih banyak orang!</p>    <p>
+                    <ul>
+                        <li><b>Instagram :</b> grooth_studio</li>
+                        <li><b>YouTube   :</b> @GroothStudio</li>
+                        <li><b>X         :</b> Grooth_Studio</li>
+                    </ul>
+                    </p> <br>
+                    <h2 class="subjudul"><b>2. Berikan Masukan</b> </h2> <br>
+                    <p><b>Kami sangat menghargai masukan dari komunitas.</b> Jika Anda memiliki ide atau masukan tentang permainan kami, jangan ragu untuk menghubungi kami. Setiap pendapat yang Anda miliki sangat berharga dan dapat membantu kami untuk meningkatkan permainan.</p>
+                    <h2 class="subjudul"><b>3. Donate</b> </h2>
+                    <p><b>Jika Anda ingin mendukung kami secara langsung, Anda dapat memberikan donasi di sini.</b> Setiap kontribusi akan membantu kami mengembangkan proyek kami dan terus menciptakan permainan yang menarik.</p>
+                    <img src="img/qr.jpg" alt="" style="width: 270px; height: auto;"><br>
+                    <p>Kami ingin <b>mengucapkan terima kasih kepada para donatur</b> yang telah memberikan kontribusinya</p>
+                    <b>
+                    <p><b>Donatur Kami:</b></p>
+                    <p>
+                        <ul>
+                        <li>[Alvin Lim]</li>
+                        <li>[Grookey]</li>
+                        <li>[Jimmy]</li>
+                        </ul>
+                    </p><br>
+                    <p>Terima kasih telah mempertimbangkan untuk mendukung Grooth Studio.</b> Kami sangat menghargai dukungan Anda dan tidak sabar untuk berbagi karya kami dengan Anda!</p></div>
+
+           `);
         });
         $(".games").click(function (e) { 
             e.preventDefault();
-            $(".judulisi").html("Our Games.");
+            $(".judulisi").html("Game Kami.");
             $(".isinyaisi").html(`
                 <center>
-                    <h2 class='commingsoon'>This Page Comming Soon...</h2>
+                    <h2 class='commingsoon'>Halaman Ini Segera Datang...</h2>
                     <img src="img/comming-soon.png" height="200px" width="200px">
                 </center>
             `);
