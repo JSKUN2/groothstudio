@@ -299,8 +299,8 @@ a{
       flex-direction: column;
       justify-content: start;
       height: 100%;
-      gap: 0;
-      margin-left: 25%;
+      gap: 12px;
+      margin-left: 15px;
       margin-top: 25%;
       padding: 0;
       border: none;
@@ -314,7 +314,6 @@ a{
       margin: 0;
       padding: 0.5em 0;
       color:#FFDDB4;
-      margin-left: 10%;
       position: relative;
   }
   .hiasmenu{
