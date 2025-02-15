@@ -15,108 +15,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    body{
-        background-color: #003567;
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        overflow: hidden;
-    }
-    .topnav{
-        height: 8%;
-        width: 100%;
-        z-index: 0;
-    }
-    .bottom{
-        height: 92%;
-        width: 100vw;
-        padding: 0;
-        z-index: 0;
-    }
-    .slide{
-        margin: auto;
-        z-index: 1;
-        width: 95%;
-        height: 100%;
-        border-top-left-radius: 44px;
-        border-top-right-radius: 44px;
-        background-color: #FFEBD3;
-    }
-    .hiasan1{
-        width: 350px;
-        height: 19px;
-        border-radius: 100px;
-        background-color: #003567;
-        margin: auto;
-        max-width: auto;
-        z-index: 3;
-    }
-    .topslide{
-        padding: 50px;
-        height: 100%
-    }
-    .isi{
-        overflow-y:auto;
-        height: 80%;
-    }
-    .isi h1{
-        font-family: "Montserrat";
-        color: #003567;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 156.03px;
-        margin-top: 0;
-    }
-    .isi p{
-        font-family: "Montserrat";
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 20.26px;
-        margin-bottom: 50px;
-    }
-    .subjudul{
-        color: #003567;
-    }
-    .commingsoon{
-        color: #003567;
-        font-weight: 600;
-    }
     .kanan .english{
         text-decoration: none;
         color: #4F7FBF;
     }
-    a{
-        text-decoration: none;
-    }
 </style>
 <body>
-    <div class="topnav">
-        <section class="top-nav">
-            <div style="display: flex; flex-direction: row;">
-              <img src="img/logo" alt="" width="70px" height="70px" style="clip-path: circle(); margin: auto;"> <p class="menu active" style="text-decoration: none; margin: auto;">Grooth</p>
-            </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
-            <ul class="menu">
-              <li class="home active" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); home()">Home</li>
-              <li class="news" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()">News</li>
-              <li class="faq" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()">FAQ</li>
-              <li class="about" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); about()">About Us</li>
-              <li class="support" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); support()">Support Us</li>
-              <li class="games" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); games()">Games</li>
-            </ul>
-          </section>
-    </div>
     <div class="bottom">
         <div class="slide">
             <div class="topslide">
                 <div class="hiasan1"></div>
                 <div class="hiasan2">
-                    <div class="input-group mb-3">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                     </div>
                     <div class="user"><svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,16 +43,41 @@
                     <p class="isinyaisi">Grooth Studio is an indie game development group founded on April 19, 2024. We focus on creating and developing fun and innovative 2D games, aiming to offer players a unique and enjoyable experience. Our team consists of talented and dedicated members, each with specific skills, ensuring high quality game production.</p>
                 <div class="bahasa">
                     <div class="kiri">Change Language ?</div>
-                    <div class="kanan"><a href="desktop-ID.html"><h4 class="indonesia">Indonesia</h4></a><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="kanan"><a href="desktop-ID.html"><h4 class="indonesia">Indonesia</h4></a><svg class="switchlogo" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.1477 22.1273H5.10418C4.89709 22.1273 4.72355 22.0577 4.58355 21.9187C4.44355 21.7797 4.37404 21.6062 4.37501 21.3981C4.37598 21.19 4.4455 21.0165 4.58355 20.8775C4.72161 20.7384 4.89515 20.6689 5.10418 20.6689H15.1477L11.1519 16.6731C11.0148 16.537 10.9419 16.3707 10.9331 16.1743C10.9234 15.9799 10.9963 15.802 11.1519 15.6406C11.3123 15.4802 11.4854 15.4 11.6711 15.4C11.8567 15.4 12.0303 15.4802 12.1917 15.6406L17.1238 20.5741C17.2511 20.7005 17.3406 20.8303 17.3921 20.9635C17.4436 21.0967 17.4694 21.2416 17.4694 21.3981C17.4694 21.5546 17.4436 21.6995 17.3921 21.8327C17.3406 21.9659 17.2511 22.0957 17.1238 22.2221L12.1829 27.1643C12.041 27.3063 11.8738 27.3807 11.6813 27.3875C11.4878 27.3943 11.3108 27.317 11.1504 27.1556C10.9949 26.9952 10.9161 26.8231 10.9142 26.6393C10.9122 26.4556 10.991 26.284 11.1504 26.1246L15.1477 22.1273ZM19.8523 14.3033L23.8481 18.2991C23.9852 18.4353 24.0581 18.601 24.0669 18.7964C24.0756 18.9918 24.0027 19.1702 23.8481 19.3316C23.6887 19.4921 23.5156 19.5723 23.329 19.5723C23.1423 19.5723 22.9692 19.4921 22.8098 19.3316L17.8763 14.3981C17.7489 14.2717 17.6595 14.1419 17.6079 14.0087C17.5564 13.8755 17.5306 13.7307 17.5306 13.5741C17.5306 13.4176 17.5564 13.2727 17.6079 13.1396C17.6595 13.0064 17.7489 12.8761 17.8763 12.7487L22.8171 7.80789C22.959 7.66594 23.1267 7.59157 23.3202 7.58476C23.5137 7.57796 23.6901 7.65525 23.8496 7.81664C24.0051 7.97706 24.0839 8.14865 24.0858 8.33143C24.0888 8.51518 24.01 8.68726 23.8496 8.84768L19.8538 12.8435H29.8958C30.1039 12.8435 30.2774 12.9135 30.4165 13.0535C30.5555 13.1935 30.625 13.3671 30.625 13.5741C30.625 13.7812 30.5555 13.9548 30.4165 14.0948C30.2774 14.2348 30.1039 14.3043 29.8958 14.3033H19.8523Z" fill="#003567"/>
                         </svg>
-                        <a href="desktop-EN.html"><h4 class="english">English</h4></a></div>
+                        <a href="index.html"><h4 class="english">English</h4></a></div>
                 </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="topnav">
+        <section class="top-nav">
+            <div class="logoimg">
+                <img src="img/logo" alt="" width="50px" height="50px" style="margin: auto;"> 
+                <p class="namaper active" style="text-decoration: none;">Grooth</p>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <div class="bapaknyamenu">
+                <ul class="menu">
+                    <li class="home active" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); home()"><img src="img/Vector.svg" alt="" class="hiasmenu">Home</li>
+                    <li class="news" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()"><img src="img/Vector-1.svg" alt="" class="hiasmenu">News</li>
+                    <li class="faq" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); faq()"><img src="img/Vector-2.svg" alt="" class="hiasmenu">FAQ</li>
+                    <li class="about" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); about()"><img src="img/Vector-3.svg" alt="" class="hiasmenu">About Us</li>
+                    <li class="support" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); support()"><img src="img/Vector-4.svg" alt="" class="hiasmenu">Support Us</li>
+                    <li class="games" onclick="$(this).siblings().removeClass('active'); $(this).addClass('active'); games()"><img src="img/Vector-5.svg" alt="" class="hiasmenu">Games</li>
+                </ul>
+            </div>
+        </section>
+    </div>
     <script>
+        $(document).ready(function () {
+            $("#menu-toggle").prop("checked", false);
+        });
         $(".indonesia").hover(function () {
                 $(".english").css("color", "#003567");
                 $(".indonesia").css("color", "#4F7FBF");
@@ -151,7 +87,7 @@
                 $(".indonesia").css("color", "#003567");
             }
         );
-        $(".News").click(function (e) { 
+        $(".news").click(function (e) { 
             e.preventDefault();
             $(".judulisi").html("News.");
             $(".isinyaisi").html("<b>Grooth Studio Team :</b><br><br>Currently, Grooth Studio is focusing on developing our newest game. Our team is working hard to create a unique and engaging gaming experience for gamers. We are designing new features and gameplay mechanics that will bring more challenges and excitement to players.<br>Although there is no new News that we can share at this time, we would like to thank you for your support. We will provide further updates as soon as this game is ready to be introduced to the public.<br><br>Thank you for being part of our journey!");
@@ -190,9 +126,10 @@
                             <p><b>Be a part of our journey by following our social media accounts.</b> We frequently share updates, sneak peeks, and the latest news about our projects. Your every like and share helps us reach more people!</p>
                             <p>
                             <ul>
-                                <li><b>Instagram :</b> grooth_studio</li>
-                                <li><b>YouTube :</b> @GroothStudio</li>
-                                <li><b>X :</b> Grooth_Studio</li>
+                                <li><a href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Fgrooth_studio%2F&sa=D&sntz=1&usg=AOvVaw1mocSjjUT3tnYnXdmsrmTn" target="_blank"><b>Instagram :</b> grooth_studio</a></li>
+                                <li><a href="https://www.youtube.com/@groothstudio" target="_blank"><b>YouTube :</b> @GroothStudio</a></li>
+                                <li><a href="https://www.google.com/url?q=https%3A%2F%2Fx.com%2FGrooth_Studio&sa=D&sntz=1&usg=AOvVaw020-fgkJSyCc1x1pTDS0ky" target="_blank"><b>X :</b> Grooth_Studio</a></li>
+                                <li><a href="https://github.com/GroothStudio" target="_blank"><b>Github :</b> GroothStudio</a></li> 
                             </ul>
                             </p> <br>
                             <h2 class="subjudul"><b>2. Give Feedback</b> </h2> <br>
