@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: groothstudio.netlify.app
+Token: 9270634e7ff4faeaf83aefb3ec24dfff88809ee221e94e78eef9bc36639db342 
