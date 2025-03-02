@@ -333,7 +333,7 @@ background-color: #FFEBD3;
       flex-direction: column;
       justify-content: start;
       height: 100%;
-      gap: 12px;
+      gap: 2px;
       margin-left: 15px;
       margin-top: 25%;
       padding: 0;
@@ -352,7 +352,7 @@ background-color: #FFEBD3;
   }
   .hiasmenu{
     display: block;
-    margin-right: 20px;
+    margin-right:6px;
   }
   .menu ul{
     text-align: left;
