@@ -94,12 +94,13 @@ margin: 0;
 padding: 0;
 }
 .hiasmenu{
-width: 20px;
+width: 14px;
 height: auto;
 display: none;
 }
 .menu > li {
-margin: 0 1rem;
+margin-left: 20%;
+margin-top: 2px;
 overflow: hidden;
 cursor: pointer;
 }
