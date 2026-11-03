@@ -96,7 +96,7 @@ return (
               <a href={anggota.link} className="block mt-5 md:hidden">
                 <button className="w-full py-1.5 bg-white text-black rounded-full font-medium text-[3.2vw]">Download</button>
               </a>
-            <div className="flex justify-end p-10 max-md:hidden">
+            <div className="flex justify-end pt-0 pb-10 max-md:hidden">
               <a href={anggota.link} target="_blank"><button className="w-[16vw] h-[3vw] bg-white rounded-full">Download</button></a>
             </div>
           </div>

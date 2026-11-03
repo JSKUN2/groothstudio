@@ -41,7 +41,7 @@ export default function Head({scrollToAnggota}){
             <p class="jepun" className='font-light text-[1.1vw] text-white/60 max-md:text-[3.2vw]'>情熱から始まり、ずっと遊びたかった世界を創り続ける。</p>
             <button className='font-light w-[12vw] h-[3vw] max-md:h-[9vw] max-md:w-[35vw] bg-white mt-10 max-md:mt-3 cursor-pointer text-[1.1vw] max-md:text-[3vw]' onClick={scrollToAnggota}>Meet The Team</button>
           </div>
-          <div className='inline-grid grid-cols-2 font-light gap-x-0 text-center items-center gap-y-0 max-md:hidden'>
+          <div className='inline-grid grid-cols-2 font-light gap-x-0 text-center items-center gap-y-0 max-md:hidden z-10'>
             <h1 className='text-white text-[5.5vw] m-0 leading-none'>2</h1>
             <h1 className='text-white text-[5.5vw] m-0 leading-none'>100+</h1>
             <h1 className='text-white text-[1.5vw] m-0'>Games</h1>

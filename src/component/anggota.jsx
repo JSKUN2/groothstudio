@@ -127,7 +127,7 @@ export default function Anggota() {
                     rel="noopener noreferrer"
                     className="w-full mt-5"
                   >
-                    <button className="w-full h-[48px] max-md:h-[32px] bg-black text-white font-light text-[18px] max-md:text-[1.8vh]">
+                    <button className="w-full h-[50px] max-md:h-[40px] bg-black text-white font-light text-[18px] max-md:text-[1.8vh]">
                       Open Portfolio
                     </button>
                   </a>

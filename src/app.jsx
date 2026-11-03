@@ -93,7 +93,7 @@ return (
       />*/
       <CustomScrollbar />      
 
-      <div className="absolute top-2.5 left-14 z-30 max-md:hidden">
+      <div className="absolute top-3 left-14 z-30 max-md:hidden">
         <img
           src="/grooth.png"
           alt="Grooth Studio"
@@ -101,7 +101,7 @@ return (
         />
       </div>
 
-      <div className="fixed top-0 left-0 z-20 hidden md:flex w-full items-center justify-center gap-20 py-5 text-[17px] font-light text-white backdrop-blur-md bg-[rgba(15,15,15,0.8)]"
+      <div className="fixed top-0 left-0 z-40 hidden md:flex w-full items-center justify-center gap-20 py-5 text-[17px] font-light text-white backdrop-blur-md bg-[rgba(15,15,15,0.65)]"
         style={{
           backgroundColor: `rgba(15,15,15,${scrollOpacity * 0.8})`,
           backdropFilter: `blur(${scrollOpacity * 12}px)`,
