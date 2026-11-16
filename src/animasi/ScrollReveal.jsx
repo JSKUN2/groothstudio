@@ -36,7 +36,7 @@ const ScrollReveal = ({
         elements.push(
           <span
             key={key++}
-            className="word text-[2.1vw] max-md:text-[6.5vw] text-white"
+            className="word text-[2.1vw] max-md:text-[16px] text-white"
             style={{
               display: "inline",
               transition: "color 0.3s",
@@ -81,7 +81,7 @@ const ScrollReveal = ({
         elements.push(
           <span
             key={key++}
-            className="word text-[1.707vw] max-md:text-[5vw] text-white/60"
+            className="word text-[1.707vw] max-md:text-[12px] text-white/60"
             style={{
               display: "inline-block",
               transition: "color 0.3s",

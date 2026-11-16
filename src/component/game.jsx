@@ -78,8 +78,8 @@ return (
                 </div>
               </div>
             <div className="flex flex-row gap-5 overflow-x-auto">
-              <img src={anggota.gmbr1} className="w-[46vw] max-md:w-[62vw] h-auto" />
-              <img src={anggota.gmbr2} className="w-[46vw] max-md:w-[62vw] h-auto" />
+              <img src={anggota.gmbr1} className="w-auto max-md:w-[62vw] h-[38vw]" />
+              <img src={anggota.gmbr2} className="w-auto max-md:w-[62vw] h-[38vw]" />
             </div>
               <h2 className="text-white/80 text-[6vw] mb-4 mt-8 border-b pb-2">About this game</h2>
               <p className="text-[4vw] text-white/80 mb-2">{anggota.desk1}</p>
